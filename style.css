@@ -1,0 +1,96 @@
+html {
+    height: 100%;
+}
+
+/*box model*/
+* {
+    box-sizing: border-box;
+}
+
+/*margins and padding of body*/
+body {
+    margin: 5px;
+    padding: 10px;
+    align-content: center;
+    overflow: scroll;
+    background-color: white;
+    color: black;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Style the menu */
+.menu {
+    overflow: hidden;
+    border: 1px solid #3d0c07;
+    background-color: white;
+    font-family: monospace;
+    font-size: large;
+}
+
+/* Style the buttons that are used to open the menu's content */
+.menu button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: monospace;
+}
+
+/* Change background color of buttons on hover */
+.menu button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.menu button.active {
+    background-color: #ccc;
+}
+
+/* Style the page content */
+.pagecontent {
+    display: none;
+    padding: 6px 12px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+    font-family: monospace;
+    font-size: medium;
+    height: 100%;
+}
+
+@media screen and (max-width: 100%) {
+    .column {
+        width: 100%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: monospace;
+}
+
+/* Style for the container div */
+.forms-container {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space forms evenly horizontally */
+}
+
+/* Style for each form */
+.form {
+    flex: 1;
+    /* Each form takes equal space within the container */
+    margin-right: 10px;
+    /* Add some spacing between forms */
+}
+
+footer {
+    font-family: monospace;
+}

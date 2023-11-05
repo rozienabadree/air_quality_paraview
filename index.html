@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <title> ParaView: Air Quality Visualization </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="air-icon.jpg">
+        <style>
+            .tabcode {
+                display: inline-block;
+                margin-left: 160px;
+            }
+
+            .listcode {
+                display: inline-block;
+                margin-left: 85px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <h1>ParaView: Air Quality Visualization</h1>
+            <h3>*This site is for educational purposes only.</h3>
+        </center>
+        <div class="menu">
+            <button class="tablink" onclick="openPage('main', this)" id="defaultOpen">Overview</button>
+            <button class="tablink" onclick="openPage('pollutants', this)" id="defaultOpen">Pollutants</button>
+            <button class="tablink" onclick="openPage('gallery', this)" id="defaultOpen">ParaView Gallery</button>
+            <button class="tablink" onclick="openPage('codes', this)">Our Codes</button>
+            <button class="tablink" onclick="openPage('contact', this)">Contact</button>
+        </div>
+
+        <div id="main" class="pagecontent">
+            <h2> Overview </h2>
+            <p>To be added.</p>
+        </div>
+
+        <div id="pollutants" class="pagecontent">
+            <h2> The Different Pollutants in NYC </h2>
+            <p>To be added.</p>
+        </div>
+
+        <div id="gallery" class="pagecontent">
+            <h2> Gallery </h2>
+            <p>To be added.</p>
+        </div>
+
+        <div id="codes" class="pagecontent">
+            <h2> Codes </h2>
+            <p>To be added.</p>
+        </div>
+
+        <div id="contact" class="pagecontent">
+            <h2>If you have any questions, please contact us using the form below.</h2>
+            <script type="text/javascript" src="https://c1hmf904.caspio.com/dp/d044d00062d71a6ba69246a8af9c/emb"></script>
+        </div>
+    </body>
+
+    <footer>
+        <center>
+            ©2023 Roziena Badree, Akshat Sharma, & Peng Lie Wu
+        </center>
+    </footer>
+
+    <script>
+        // For the menu
+        function openPage(pageName, elmnt) {
+            // Hide all elements with class="pagecontent" by default
+            var i, pagecontent, tablinks;
+            pagecontent = document.getElementsByClassName("pagecontent");
+            for (i = 0; i < pagecontent.length; i++) {
+                pagecontent[i].style.display = "none";
+            }
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</html>
