@@ -35,12 +35,13 @@
             <h2>Overview</h2>
             <p>Poor air quality threatens the health of all living things from humans to plants. The Air Quality Index (AQI)
             is a measure of how clean or polluted the air is and tracks 5 major pollutants: ground level ozone, carbon monoxide,
-            sulfur dioxide, nitrogen dioxide, and airborne particles or aerosols. Our team visualized the air quality in New York
-            City (NYC) using ParaView and data obtained from <a href="https://data.cityofnewyork.us/Environment/Air-Quality/fyf4-hrcu">NYC Open Data</a>.
+            sulfur dioxide, nitrogen dioxide, and airborne particles or aerosols. Benzene and formaldehyde are both volatile organic compounds
+            (VOCs) that are also significant in the context of air quality due to their potential health effects. Our team visualized these air pollutants accross the 5
+            boroughs of New York City (NYC) using ParaView and data obtained from <a href="https://data.cityofnewyork.us/Environment/Air-Quality/fyf4-hrcu">NYC Open Data</a>.
             <br>
             <br>
-            This project is still very much under construction but is worth the read.  We hope you enjoy it.
-        </p>
+            We hope you enjoy it.
+            </p>
         </div>
 
         <div id="pollutants" class="pagecontent">
@@ -50,16 +51,66 @@
             air quality include:
             
             <ul>
-                <li><strong>Particulate Matter (PM)</strong>: These are tiny particles or droplets in the air, often from sources like construction sites, unpaved roads, fields, smokestacks, or fires. Fine particles (known as PM2.5) are especially concerning because they can penetrate deep into the lungs and even enter the bloodstream.</li>
+                <li><strong>Benzene</strong>: This pollutant is primarily found in emissions from burning coal and oil and motor vehicle exhaust. It’s also present in cigarette smoke and industrial emissions. Benzene is known for its carcinogenic properties. Long-term exposure to high levels of benzene in the air can lead to leukemia, particularly acute myeloid leukemia (AML). Short-term exposure to high levels can cause drowsiness, dizziness, unconsciousness, and even death at very high concentration.</li>
+                <br>
+                <li><strong>Carbon Monoxide (CO)</strong>: This colorless, odorless gas is harmful when inhaled in large amounts and is emitted mainly from cars and trucks.</li>
+                <br>
+                <li><strong>Formaldehyde</strong>: Formaldehyde is released into the air from various sources, including combustion processes (like automobile exhaust), tobacco smoke, wood burning, and the use of certain building materials and household products. It is also a by-product of industrial processes. Exposure to formaldehyde
+                can cause irritation of the skin, eyes, nose, and throat, and high levels of exposure may cause some types of cancers. It’s classified as a human carcinogen.</li>
                 <br>
                 <li><strong>Ground-level Ozone (O3)</strong>: This is a harmful air pollutant formed when pollutants emitted by cars, power plants, industrial boilers, refineries, chemical plants, and other sources chemically react under sunlight.</li>
                 <br>
                 <li><strong>Nitrogen Dioxide (NO2)</strong>: A gas typically produced from burning fuels, including emissions from cars, trucks, buses, power plants, and off-road equipment.</li>
                 <br>
-                <li><strong>Sulfur Dioxide (O2)</strong>: Mainly produced from burning fossil fuels by power plants and other industrial facilities.</li>
+                <li><strong>Particulate Matter (PM)</strong>: These are tiny particles or droplets in the air, often from sources like construction sites, unpaved roads, fields, smokestacks, or fires. Fine particles (known as PM2.5) are especially concerning because they can penetrate deep into the lungs and even enter the bloodstream.</li>
                 <br>
-                <li><strong>Carbon Monoxide (CO)</strong>: This colorless, odorless gas is harmful when inhaled in large amounts and is emitted mainly from cars and trucks.</li>
+                <li><strong>Sulfur Dioxide (O2)</strong>: Mainly produced from burning fossil fuels by power plants and other industrial facilities.</li>
             </ul>
+
+            Below is a table containing the acceptable concentration levels for the above pollutants.
+            <br>
+            <br>
+            <center>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-fymr">Pollutant Name</th>
+                            <th class="tg-fymr">EPA Standards</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-0pky">Benzene</td>
+                            <td class="tg-0pky">1.7 µg/m³ (annual average)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">CO</td>
+                            <td class="tg-0pky">9 ppm (8-hour average), 35 ppm (1-hour average)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">Formaldehyde</td>
+                            <td class="tg-0pky">100 µg/m³ (30-minute average)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">NO2</td>
+                            <td class="tg-0pky">100 ppb (1-hour average), 53 ppb (annual average)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">O3</td>
+                            <td class="tg-0pky">70 ppb (8-hour average)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">PM2.5</td>
+                            <td class="tg-0pky">12 µg/m³ (annual average), 35 µg/m³ (24-hour)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">SO2</td>
+                            <td class="tg-0pky">75 ppb (1-hour average)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <br>
             
             The quality of air is crucial for human health, ecosystem vitality, and the overall environment. Poor air quality can
             lead to a range of health problems, particularly respiratory and cardiovascular diseases. Governments and organizations
@@ -69,10 +120,12 @@
             To read more about air pollutants, please click the links below:
             <ul>
                 <li><a href="https://www.airnow.gov/aqi/aqi-basics/#:~:text=EPA%20establishes%20an%20AQI%20for%20five%20major%20air,and%20PM10%29%20carbon%20monoxide%20sulfur%20dioxide%20nitrogen%20dioxide#:~:text=EPA%20establishes%20an%20AQI%20for,monoxide%20sulfur%20dioxide%20nitrogen%20dioxide">The United States Environmental Protection Agency (EPA)</a></li>
-                <li><a href="https://www.epa.gov/air-quality-management-process/managing-air-quality-air-pollutant-types#:~:text=The%20U,dioxide%2C%20nitrogen%20dioxide%2C%20and">Managing Air Quality-Air Pollutant Types | US EPA</a></li>
-                <li><a href="https://www.epa.gov/criteria-air-pollutants#:~:text=The%20Clean%20Air%20Act%20requires,reviews%20and%20revises%20standards">Criteria Air Pollutants | US EPA</a></li>
-                <li><a href="https://www.epa.gov/air-quality">Air Quality | US EPA</a></li>
                 <li><a href="https://www.epa.gov/outdoor-air-quality-data#:~:text=Additional%20Air%20Monitoring%20Assessments,view%20or%20visualize%20the%20data">Air Data: Air Quality Data Collected at Outdoor Monitors Across the US</a></li>
+                <li><a href="https://www.epa.gov/air-quality">Air Quality | US EPA</a></li>
+                <li><a href="https://www.epa.gov/criteria-air-pollutants#:~:text=The%20Clean%20Air%20Act%20requires,reviews%20and%20revises%20standards">Criteria Air Pollutants | US EPA</a></li>
+                <li><a href="https://www.epa.gov/formaldehyde/facts-about-formaldehyde">Facts About Formaldehyde | US EPA</a></li>
+                <li><a href="https://iris.epa.gov/Document/&deid=38143">Health Assessment for Benzene | US EPA</a></li>
+                <li><a href="https://www.epa.gov/air-quality-management-process/managing-air-quality-air-pollutant-types#:~:text=The%20U,dioxide%2C%20nitrogen%20dioxide%2C%20and">Managing Air Quality-Air Pollutant Types | US EPA</a></li>
             </ul>
         </div>
 
@@ -199,7 +252,7 @@
         <div id="codes" class="pagecontent">
             <h2> Codes </h2>
             <p>The original dataset can be found <a href="https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r">here</a>. Our data cleaning codes can be found below and in our <a href="https://github.com/rozienabadree/air_quality_paraview">GitHub repository</a>. Please read the instructions carefully because manual labor is involved.</p>
-            <iframe src="https://nbviewer.org/github/rozienabadree/air_quality_paraview/blob/main/Data%20Cleaning.ipynb" width=100% height=600px></iframe>
+            <iframe src="https://nbviewer.org/github/rozienabadree/air_quality_paraview/blob/main/DataCleaning.ipynb" width=100% height=600px></iframe>
             <br>
             <br>
             <br>
