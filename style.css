@@ -183,3 +183,20 @@ div.desc {
     text-align: left;
     vertical-align: top
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-container figure {
+    margin: 5px;
+    width: 48%;
+    /* Adjust the width as needed */
+}
+
+.image-container img {
+    width: 100%;
+    /* Make the image fill the figure element */
+}
