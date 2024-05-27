@@ -36,8 +36,7 @@
             <h2>Overview</h2>
             <p>Poor air quality threatens the health of all living things from humans to plants. The Air Quality Index (AQI)
             is a measure of how clean or polluted the air is and tracks 5 major pollutants: ground level ozone, carbon monoxide,
-            sulfur dioxide, nitrogen dioxide, and airborne particles or aerosols. Benzene and formaldehyde are both volatile organic compounds
-            (VOCs) that are also significant in the context of air quality due to their potential health effects. I visualized these air pollutants across the 5 boroughs of New York City (NYC) using ParaView and data obtained from <a href="https://data.cityofnewyork.us/Environment/Air-Quality/fyf4-hrcu">NYC Open Data</a>.
+            sulfur dioxide, nitrogen dioxide, and airborne particles or aerosols. Benzene and formaldehyde are both volatile organic compounds (VOCs) that are also significant in the context of air quality due to their potential health effects. For this project, the levels of these air pollutants were visualized across the 5 boroughs of New York City (NYC) using ParaView and data obtained from <a href="https://data.cityofnewyork.us/Environment/Air-Quality/fyf4-hrcu">NYC Open Data</a>.
             <br>
             <br>
 
@@ -144,7 +143,7 @@
         </div>
 
         <div id="gallery" class="pagecontent">
-                <h2>Below are a few images from my ParaView visualizations.  The full catalog can be found <a href="https://drive.google.com/drive/folders/18cO-PSrU-CU_DJlIMo-cdm0tyt6m5GHl?usp=sharing">here</a>.</h2>
+                <h2>Below are a few ParaView visualizations.  The full catalog can be found <a href="https://drive.google.com/drive/folders/18cO-PSrU-CU_DJlIMo-cdm0tyt6m5GHl?usp=sharing">here</a>.</h2>
 
                 <div class="responsive">
                     <div class="gallery">
@@ -246,7 +245,7 @@
 
         <div id="codes" class="pagecontent">
             <h2> Codes </h2>
-            <p>The original dataset can be found <a href="https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r">here</a>. The data cleaning codes can be found below and in the main <a href="https://github.com/rozienabadree/air_quality_paraview">GitHub repository</a>. The GeoJSON files used to generate each image can be found <a href="https://github.com/rozienabadree/air_quality_paraview/tree/main/geojson_files">here</a>. Please read the instructions carefully because manual labor is involved.</p>
+            <p>The original dataset can be found <a href="https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r">here</a>. The data cleaning codes can be found below and in the <a href="https://github.com/rozienabadree/air_quality_paraview">main GitHub repository</a>. The GeoJSON files used to generate each image can be found <a href="https://github.com/rozienabadree/air_quality_paraview/tree/main/geojson_files">here</a>. Please read the instructions carefully because manual labor is involved.</p>
             <iframe src="https://nbviewer.org/github/rozienabadree/air_quality_paraview/blob/main/DataCleaning.ipynb" width=100% height=600px></iframe>
             <br>
             <br>
@@ -264,8 +263,27 @@
         </div>
 
         <div id="contact" class="pagecontent">
-            <h2>If you have any questions, please contact us using the form below.</h2>
-            <script type="text/javascript" src="https://c1hmf904.caspio.com/dp/d044d00062d71a6ba69246a8af9c/emb"></script>
+        <h3>If you have any inquiries, please fill out and submit the form below.</h3>
+        <br>
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form action="https://formspree.io/f/xgegdwzb" method="POST">
+            <div class="contact-form">
+                <label>Your email:<br>
+                    <input type="email" name="email">
+                </label>
+                <br><br>
+            </div>
+            <div class="contact-form">
+                <label>Your message:<br>
+                    <textarea name="message" rows="10" cols="50"></textarea>
+                </label>
+                <br><br>
+            </div>
+            <!-- your other form fields go here -->
+            <div id="submit-button">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
         </div>
     </body>
 
